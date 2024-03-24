@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* colors */
+    --color-green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --color-grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    /* fonts */
+    --font-size: 14px;
+    --font-family-inter: 'Inter', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+    --font-weight-extra-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: var(--font-family-inter);
+    background-color: var(--off-black);
+    width:100vw;
+    min-height: 100vh;
+    height:auto;
+}
+
+#social-card {
+    max-width:450px;
+    width:100%;
+    height: fit-content;
+    background-color: var(--dark-grey);
+    margin: 110px auto;
+    padding:30px;
+    border-radius: 12px;
+}
+
+#social-card * {
+    margin-bottom: 15px;
+}
+
+#social-card img {
+   display: block;
+   width:30%;
+   border-radius: 50%;
+   margin: 20px auto;
+}
+
+#social-card h1{
+    color:var(--white);
+}
+
+#social-card h3 {
+    color:var(--color-green);
+    font-family: var(--font-weight-bold);
+    margin-bottom: 30px;
+}
+#social-card > p {
+    margin-bottom: 25px;
+}
+
+#social-card > p > q {
+    color: var(--white);
+    font-family: var(--font-weight-regular);
+}
+
+#social-card > h1,h3,p {
+    text-align: center;
+    word-spacing: 2px;
+}
+
+#social-card ul {
+    list-style: none;
+}
+
+#social-card li {
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 15px  30px;
+    background-color: var(--color-grey);
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+#social-card li:hover {
+    background-color: var(--color-green);
+    color: var(--off-black);
+    transition: background-color 0.4s,color 0.4s;
+}
+
+#social-card a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+@media (min-width: 375px) {
+    #social-card {
+        width:80%;
+    }
+    #social-card h1 {
+        font-size: 16px;
+    }
+    #social-card h3 ,#social-card > p > q{
+        font-size: var(--font-size);
+    } 
+}
+
+
